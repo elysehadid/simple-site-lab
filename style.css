@@ -1,0 +1,9 @@
+body {
+  background-color: hsl(193.93deg 71.79% 69.41%);
+  padding: 2rem;
+}
+
+.border {
+  border: 5px solid hsl(141.87deg 99.02% 40.2%);
+  padding: 4rem;
+}
