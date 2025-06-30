@@ -7,15 +7,15 @@
     <title>Elyse: Simple Site Lab</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="layout">
     <!-- body: blue bg & outer padding -->
     <!-- opening div: green border & inner padding -->
-    <div class="border">
+    <div class="layout__border">
       <header>
         <!-- h1, italics-->
         <!-- Nav with 2 links separated by pipe: about us, portfolio, centered text -->
         <!-- white text, green on hover/focus -->
-        <h1>Learn with Leon & Friends</h1>
+        <h1 class="">Learn with Leon & Friends</h1>
         <nav>
           <ul>
             <li><a href="/">About us</a></li>
@@ -28,6 +28,13 @@
         <!-- 1 or 2 p tags -->
         <!-- image floated to the right -->
         <h2>About us</h2>
+        <img
+          class="layout__image"
+          src="assets/logo-learnwithleon.png"
+          width="400px"
+          height="400px"
+          alt=""
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           temporibus asperiores exercitationem, consectetur autem consequatur
@@ -45,8 +52,6 @@
           fuga consequatur adipisci perferendis sit magni accusantium. Vero
           eveniet, exercitationem ex facilis nemo cumque.
         </p>
-
-        <img src="assets/logo-learnwithleon.png" alt="" />
       </main>
       <footer>
         <!-- nav with 3 links separated by pipes -->
