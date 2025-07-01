@@ -1,12 +1,19 @@
 /* TODO: Add css variables for colors. */
 
+:root {
+  --white: hsl(0deg 0% 100%);
+  --blue: hsl(193.93deg 71.79% 69.41%);
+  --green: hsl(141.87deg 99.02% 40.2%);
+  --gray: hsl(187.5deg 3.25% 51.76%);
+}
+
 .layout {
-  background-color: hsl(193.93deg 71.79% 69.41%);
+  background-color: var(--blue);
   padding: 6rem;
 }
 
 .layout__border {
-  border: 5px solid hsl(141.87deg 99.02% 40.2%);
+  border: 5px solid var(--green);
   padding: 4rem;
 }
 
@@ -51,21 +58,14 @@
 }
 
 .nav__link:not(:last-child)::after {
-  color: hsl(187.5deg 3.25% 51.76%);
+  color: var(--gray);
   content: " |";
 }
 
 .nav__link a {
-  color: hsl(141.87deg 99.02% 40.2%);
+  color: var(--green);
 }
 
 .nav__link a[href$="/index"] {
-  color: white;
+  color: var(--white);
 }
-
-/* layout__image
-float right
-*/
-
-/* text__link link behavior */
-/* hover/focus: green or green border */
