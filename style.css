@@ -1,6 +1,8 @@
+/* TODO: Add css variables for colors. */
+
 .layout {
   background-color: hsl(193.93deg 71.79% 69.41%);
-  padding: 2rem;
+  padding: 6rem;
 }
 
 .layout__border {
@@ -9,12 +11,12 @@
 }
 
 .text {
-  color: white;
+  color: hsl(0deg 0% 100%);
 }
 
-.text--centered {
+/* .text--centered {
   text-align: center;
-}
+} */
 
 .text__h1 {
   font-size: 4rem;
@@ -31,16 +33,33 @@
   font-size: 1.5rem;
 }
 
+.nav {
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.nav__group {
+  list-style-type: none;
+}
+
+.nav__link {
+  padding-inline-end: 0.5rem;
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.nav__link:not(:last-child)::after {
+  content: " |";
+  color: hsl(187.5deg 3.25% 51.76%);
+}
+
+.nav__link a {
+  color: hsl(0deg 0% 100%);
+}
+
 /* layout__image
 float right
 */
 
-/* nav center*/
-/* nav__group remove ul dots*/
-/* nav__link font size 
-
-hover/focus: green or green border
-after: add pipe between each link thats not last-child
-*/
-
 /* text__link link behavior */
+/* hover/focus: green or green border */
