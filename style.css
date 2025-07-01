@@ -10,6 +10,10 @@
   padding: 4rem;
 }
 
+.layout__image {
+  float: right;
+}
+
 .text {
   color: hsl(0deg 0% 100%);
 }
@@ -26,7 +30,7 @@
 }
 
 .text__body {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .nav {
@@ -53,6 +57,10 @@
 
 .nav__link a {
   color: hsl(141.87deg 99.02% 40.2%);
+}
+
+.nav__link a[href$="/index"] {
+  color: white;
 }
 
 /* layout__image
