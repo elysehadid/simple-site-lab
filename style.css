@@ -8,6 +8,29 @@
   padding: 4rem;
 }
 
+.text {
+  color: white;
+}
+
+.text--centered {
+  text-align: center;
+}
+
+.text__h1 {
+  font-size: 4rem;
+  font-style: italic;
+  font-family: serif;
+}
+
+.text__h2 {
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+.text__body {
+  font-size: 1.5rem;
+}
+
 /* layout__image
 float right
 */
@@ -20,10 +43,4 @@ hover/focus: green or green border
 after: add pipe between each link thats not last-child
 */
 
-/* text: white color */
-/* text__h1 font size*/
-/* text__h2 font-size */
-/* text__body font-size*/
-/* text--centered, center text */
-
-/* text__link link behavior*/
+/* text__link link behavior */
