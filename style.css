@@ -1,0 +1,71 @@
+/* TODO: Add css variables for colors. */
+
+:root {
+  --white: hsl(0deg 0% 100%);
+  --blue: hsl(193.93deg 71.79% 69.41%);
+  --green: hsl(141.87deg 99.02% 40.2%);
+  --gray: hsl(187.5deg 3.25% 51.76%);
+}
+
+.layout {
+  background-color: var(--blue);
+  padding: 6rem;
+}
+
+.layout__border {
+  border: 5px solid var(--green);
+  padding: 4rem;
+}
+
+.layout__image {
+  float: right;
+}
+
+.text {
+  color: hsl(0deg 0% 100%);
+}
+
+.text__h1 {
+  font-family: serif;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.text__h2 {
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+
+.text__body {
+  font-size: 2rem;
+}
+
+.nav {
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  padding-block: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nav__group {
+  list-style-type: none;
+}
+
+.nav__link {
+  display: inline-block;
+  padding-inline-end: 0.5rem;
+}
+
+.nav__link:not(:last-child)::after {
+  color: var(--gray);
+  content: " |";
+}
+
+.nav__link a {
+  color: var(--green);
+}
+
+.nav__link a[href$="/index"] {
+  color: var(--white);
+}

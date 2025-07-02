@@ -7,28 +7,27 @@
     <title>Elyse: Simple Site Lab</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- body: blue bg & outer padding -->
-    <!-- opening div: green border & inner padding -->
-    <div>
+  <body class="layout">
+    <div class="layout__border">
       <header>
-        <!-- h1, italics-->
-        <!-- Nav with 2 links separated by pipe: about us, portfolio, centered text -->
-        <!-- white text, green on hover/focus -->
-        <h1>Learn with Leon & Friends</h1>
-        <nav>
-          <ul>
-            <li><a href="/">About us</a></li>
-            <li><a href="/">Portfolio</a></li>
+        <h1 class="text text__h1">Learn with Leon & Friends</h1>
+        <nav class="nav">
+          <ul class="nav__group">
+            <li class="nav__link"><a href="/index">About us</a></li>
+            <li class="nav__link"><a href="/portfolio">Portfolio</a></li>
           </ul>
         </nav>
       </header>
       <main>
-        <!-- h2: about us -->
-        <!-- 1 or 2 p tags -->
-        <!-- image floated to the right -->
-        <h2>About us</h2>
-        <p>
+        <h2 class="text text__h2">About us</h2>
+        <img
+          class="layout__image"
+          src="assets/logo-learnwithleon.png"
+          width="400px"
+          height="400px"
+          alt=""
+        />
+        <p class="text text__body">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           temporibus asperiores exercitationem, consectetur autem consequatur
           consequuntur, quia soluta ut perspiciatis ad. Rerum est impedit iusto
@@ -37,7 +36,7 @@
           eveniet, exercitationem ex facilis nemo cumque.
         </p>
 
-        <p>
+        <p class="text text__body">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
           temporibus asperiores exercitationem, consectetur autem consequatur
           consequuntur, quia soluta ut perspiciatis ad. Rerum est impedit iusto
@@ -45,20 +44,16 @@
           fuga consequatur adipisci perferendis sit magni accusantium. Vero
           eveniet, exercitationem ex facilis nemo cumque.
         </p>
-
-        <img src="assets/logo-learnwithleon.png" alt="" />
       </main>
       <footer>
-        <!-- nav with 3 links separated by pipes -->
-        <nav>
-          <ul>
-            <li><a href="/">Twitch</a></li>
-            <li><a href="/">Twitter</a></li>
-            <li><a href="/">Youtube</a></li>
+        <nav class="nav">
+          <ul class="nav__group">
+            <li class="nav__link"><a href="/twitch">Twitch</a></li>
+            <li class="nav__link"><a href="/twitter">Twitter</a></li>
+            <li class="nav__link"><a href="/youtube">Youtube</a></li>
           </ul>
         </nav>
       </footer>
-      <!-- closing div: green border & inner padding -->
     </div>
   </body>
 </html>
